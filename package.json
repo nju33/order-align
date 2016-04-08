@@ -1,6 +1,6 @@
 {
   "name": "order-align",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In the order specified the array",
   "main": "index.js",
   "scripts": {

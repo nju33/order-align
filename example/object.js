@@ -13,5 +13,5 @@ const data = [
   }
 ];
 
-const result = orderAlign(data, list, 'name');
+const result = orderAlign(list, data, 'name');
 console.log(result);

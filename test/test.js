@@ -11,7 +11,7 @@ test.beforeEach(t => {
 
 test('String order', t => {
   const data = ['baz', 'foo', 'bar'];
-  const result = orderAlign(data, t.context.list);
+  const result = orderAlign(t.context.list, data);
   t.deepEqual(result, t.context.list);
 });
 
@@ -22,7 +22,7 @@ test('Object order', t => {
     {name: 'bar'}
   ];
 
-  const result = orderAlign(data, t.context.list, 'name');
+  const result = orderAlign(t.context.list, data, 'name');
   t.deepEqual(result, [
     {name: 'foo'},
     {name: 'bar'},
@@ -32,6 +32,6 @@ test('Object order', t => {
 
 test('Undefined key', t => {
   const data = ['baz', 'xxx', 'bar'];
-  const result = orderAlign(data, t.context.list);
+  const result = orderAlign(t.context.list, data);
   t.deepEqual(result, ['bar', 'baz']);
 });

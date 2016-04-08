@@ -16,7 +16,7 @@ npm i order-align
 
 ```js
 const orderAlign = require('order-align');
-orderAlign(dataArr, orderList, targetKey);
+orderAlign(orderList, dataArr, targetKey);
 ```
 
 ## Example
@@ -27,7 +27,7 @@ orderAlign(dataArr, orderList, targetKey);
 const orderList = ['foo', 'bar', 'baz'];
 const dataArr = ['baz', 'foo', 'bar'];
 
-const result = orderAlign(dataArr, orderList);
+const result = orderAlign(orderList, dataArr);
 console.log(result);
 // [ 'foo', 'bar', 'baz' ]
 ```
@@ -41,7 +41,7 @@ const dataArr = [
   {name: 'bar'}
 ];
 
-const result = orderAlign(dataArr, orderList, 'name');
+const result = orderAlign(orderList, dataArr, 'name');
 console.log(result);
 // [ { name: 'foo' }, { name: 'bar' }, { name: 'baz' } ]
 ```

@@ -1,8 +1,8 @@
 const get = require('lodash.get');
 const logger = require('log4js').getLogger('orderAlign');
 
-module.exports = function orderAlign(arr, orderList, targetKey) {
-  return arr
+module.exports = function orderAlign(orderList, dataArr, targetKey) {
+  return dataArr
     .reduce((result, next) => {
       if (typeof next === 'string') {
         return add(result, orderList, next, next);
