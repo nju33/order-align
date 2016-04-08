@@ -15,7 +15,7 @@ npm i order-align
 ## Usage
 
 ```js
-const orderALign = require('order-align');
+const orderAlign = require('order-align');
 orderAlign(dataArr, orderList, targetKey);
 ```
 
