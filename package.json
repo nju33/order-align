@@ -1,0 +1,41 @@
+{
+  "name": "order-align",
+  "version": "0.1.0",
+  "description": "In the order specified the array",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/totora0155/order-align.git"
+  },
+  "keywords": [
+    "order"
+  ],
+  "author": "nju33",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/totora0155/order-align/issues"
+  },
+  "homepage": "https://github.com/totora0155/order-align#readme",
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "xo": "^0.13.0"
+  },
+  "ava": {
+    "files": [
+      "test/*.js"
+    ]
+  },
+  "xo": {
+    "env": [
+      "node"
+    ],
+    "space": 2
+  },
+  "dependencies": {
+    "lodash.get": "^4.2.0",
+    "log4js": "^0.6.33"
+  }
+}
